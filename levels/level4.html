@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Quest: Level 4</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Level 4: Form Interaction</h1>
+        <p>Fill out the form and submit to see the content change.</p>
+        
+        <!-- Formulario -->
+        <form id="userForm">
+            <label for="userName">Enter your name:</label>
+            <input type="text" id="userName" name="userName">
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Resultado -->
+        <div id="result"></div>
+
+        <!-- Caritas de feedback -->
+        <div id="reaction">
+            <span id="happyFace" style="display:none;">😊</span>
+            <span id="sadFace" style="display:none;">😢</span>
+        </div>
+    </div>
+
+    <!-- Audios -->
+    <audio id="backgroundMusic" loop>
+        <source src="../audio/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="celebrationSound">
+        <source src="../audio/celebration.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="errorSound">
+        <source src="../audio/error.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Librería de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.min.js"></script>
+
+    <script src="../js/level4.js"></script>
+</body>
+</html>

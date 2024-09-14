@@ -1,0 +1,50 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EAF6F6; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333; /* Texto oscuro */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el menú principal y la pantalla del juego */
+.menu-container, .game-container {
+    text-align: center;
+    background-color: white; /* Fondo blanco para el contenido */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Estilo del botón */
+button {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #007BFF; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul oscuro al pasar el ratón */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555; /* Texto gris suave */
+    margin-bottom: 20px;
+}

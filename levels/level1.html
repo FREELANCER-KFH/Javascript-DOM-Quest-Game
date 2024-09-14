@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Quest: Level 1</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Level 1: Click the Button!</h1>
+        <p>Click the button below to change its text.</p>
+        <button id="actionButton">Click me!</button>
+        <div id="nextLevel" style="display: none;">
+            <p>Great job! You've completed Level 1.</p>
+            <button id="nextButton">Go to Level 2</button>
+        </div>
+        <audio id="errorSound">
+            <source src="audio/error.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div id="reaction">
+            <span id="happyFace" style="display:none;">😊</span>
+            <span id="sadFace" style="display:none;">😢</span>
+        </div>        
+        <audio id="backgroundMusic" loop>
+            <source src="audio/background-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="celebrationSound">
+            <source src="audio/celebration.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="../js/level1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.min.js"></script>
+</body>
+</html>
